@@ -18,10 +18,10 @@
   "less.validate": false,
   "scss.validate": false,
   "[css]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true
   },
   "[scss]": {
-    "editor.formatOnSave": false
+    "editor.formatOnSave": true
   },
   "editor.codeActionsOnSave": {
     "quickfix.biome": "always",
