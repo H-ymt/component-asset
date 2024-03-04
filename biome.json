@@ -3,6 +3,10 @@
   "organizeImports": {
     "enabled": true
   },
+  "files": {
+    "ignoreUnknown": true,
+    "ignore": ["./.next"]
+  },
   "linter": {
     "enabled": true,
     "rules": {
@@ -12,9 +16,8 @@
   "formatter": {
     "enabled": true,
     "formatWithErrors": false,
-    "ignore": [],
     "indentStyle": "space",
-    "lineWidth": 90
+    "lineWidth": 80
   },
   "javascript": {
     "parser": {
@@ -33,7 +36,7 @@
     "formatter": {
       "enabled": true,
       "indentStyle": "space",
-      "lineWidth": 90
+      "lineWidth": 80
     }
   }
 }
