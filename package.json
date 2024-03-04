@@ -6,17 +6,27 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "stylelint": "stylelint --fix .",
+    "format": "biome format --write .",
+    "lint": "biome lint --fix .",
+    "check": "biome check --apply .",
+    "biome": "biome format --write . && biome lint . && biome check --apply ."
   },
   "dependencies": {
+    "markuplint": "^4.3.0",
+    "next": "14.1.1",
     "react": "^18",
     "react-dom": "^18",
-    "next": "14.1.1"
+    "sass": "^1.71.1"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@biomejs/biome": "1.5.3",
     "@types/node": "^20",
     "@types/react": "^18",
-    "@types/react-dom": "^18"
+    "@types/react-dom": "^18",
+    "stylelint": "^16.2.1",
+    "stylelint-config-recess-order": "^5.0.0",
+    "stylelint-config-standard-scss": "^13.0.0",
+    "typescript": "^5"
   }
 }
