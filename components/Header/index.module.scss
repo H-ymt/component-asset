@@ -1,0 +1,30 @@
+@use "@variables" as *;
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: var(--header-height);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.headerInner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerLogo {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.headerLogo img {
+  border-radius: var(--rounded-full);
+}
+
+.headerMenu {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}

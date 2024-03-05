@@ -1,0 +1,14 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  padding: 1px;
+  background: transparent;
+  border: none;
+  border-radius: var(--rounded-xs);
+}
+
+@media(hover: hover) {
+  .button:hover {
+    outline: 2px solid var(--color-primary);
+  }
+}
