@@ -1,0 +1,87 @@
+@use "@variables" as *;
+
+:root {
+  // layout
+  --header-height: 72px;
+  --container-width: 1000px;
+
+  // color
+  --color-primary: #0f83fd;
+  --color-bg-base: #ffff;
+  --color-text-body: #000000d1;
+  --color-text-muted: #8f9faa;
+  --color-text-link: #0f83fd;
+  --color-button-primary: #0f83fd;
+  --color-border: #e2e2e3;
+
+  // border-radius
+  --rounded-xs: 4px;
+  --rounded-sm: 7px;
+  --rounded-md: 10px;
+  --rounded-lg: 14px;
+  --rounded-xl: 20px;
+  --rounded-full: 99rem;
+}
+
+[data-theme='dark'] {
+  // color
+  --color-primary: #FF4785;
+  --color-bg-base: #171C23;
+  --color-text-body: #ffff;
+  --color-text-muted: #ffffff80;
+  --color-text-link: #029CFD;
+  --color-button-primary: #029CFD;
+  --color-border: #2e2e32;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100vw;
+  height: 100%;
+  overflow-x: hidden;
+  color: var(--color-text-body);
+  background: var(--color-bg-base)
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.01em;
+}
+
+section {
+  padding: 2.5rem 0;
+
+  @include mq(md) {
+    padding: 5rem 0;
+  }
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}

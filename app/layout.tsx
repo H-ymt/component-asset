@@ -1,8 +1,11 @@
+import Header from "@/components/Header"
+import "modern-css-reset"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
-import "./globals.css"
+import { Nunito_Sans } from "next/font/google"
+import Providers from "./libs/providers"
+import "./styles/globals.scss"
 
-const inter = Inter({ subsets: ["latin"] })
+const nunito = Nunito_Sans({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -15,8 +18,13 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body className={nunito.className}>
+        <Providers>
+          <Header />
+          <main>{children}</main>
+        </Providers>
+      </body>
     </html>
   )
 }
