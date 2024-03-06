@@ -5,8 +5,8 @@ export default function Moon() {
     <svg
       role="img"
       aria-label="dark mode"
-      width={28}
-      height={28}
+      width={24}
+      height={24}
       viewBox="0 0 24 24"
       fill="none"
       stroke="#9670f0"
