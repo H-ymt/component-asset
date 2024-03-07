@@ -1,0 +1,16 @@
+@use "@variables" as *;
+
+.aside {
+  display: none;
+  padding: 32px 32px 0;
+
+  @include mq(lg) {
+    display: block;
+  }
+}
+
+.asideTitle {
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-weight: 500;
+}
