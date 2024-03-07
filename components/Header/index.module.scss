@@ -10,6 +10,7 @@
 
 .headerInner {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -25,6 +26,12 @@
 
 .headerMenu {
   display: flex;
-  gap: 20px;
+  gap: 12px;
+  align-items: center;
+}
+
+.headerIcons {
+  display: flex;
+  gap: 6px;
   align-items: center;
 }

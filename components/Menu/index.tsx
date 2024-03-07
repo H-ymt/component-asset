@@ -30,6 +30,16 @@ export default function Menu() {
             About
           </Link>
         </li>
+        <li>
+          <Link
+            href="/stack"
+            className={`${styles.link} ${
+              pathname === "/stack" ? styles.active : ""
+            }`}
+          >
+            Stack
+          </Link>
+        </li>
       </ul>
     </nav>
   )

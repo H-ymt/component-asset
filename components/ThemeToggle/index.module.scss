@@ -1,7 +1,9 @@
 .button {
   display: inline-flex;
   align-items: center;
-  padding: 1px;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
   background: transparent;
   border: none;
   border-radius: var(--rounded-xs);
@@ -10,5 +12,42 @@
 @media(hover: hover) {
   .button:hover {
     outline: 2px solid var(--color-primary);
+  }
+}
+
+.loaderContainer {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+}
+
+.loader {
+  width: 4px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  animation: l5 1s infinite linear alternate;
+}
+
+@keyframes l5 {
+  0% {
+    background: hsla(var(--color-loader) / 90%);
+    box-shadow: 7px 0 hsla(var(--color-loader) / 90%), -7px 0 hsla(var(--color-loader) / 90%)
+  }
+
+  33% {
+    background: hsla(var(--color-loader) / 10%);
+    box-shadow: 7px 0 hsla(var(--color-loader) / 90%), -7px 0 hsla(var(--color-loader) / 10%)
+  }
+
+  66% {
+    background: hsla(var(--color-loader) / 10%);
+    box-shadow: 7px 0 hsla(var(--color-loader) / 10%), -7px 0 hsla(var(--color-loader) / 90%)
+  }
+
+  80% {
+    background: hsla(var(--color-loader) / 90%);
+    box-shadow: 7px 0 hsla(var(--color-loader) / 10%), -7px 0 hsla(var(--color-loader) / 90%)
   }
 }

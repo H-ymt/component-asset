@@ -1,26 +1,30 @@
 .list {
   display: flex;
-  gap: 12px;
-  align-items: center;
 }
 
 .link {
-  padding: 4px 16px;
+  display: flex;
+  align-items: center;
+  height: var(--header-height);
+  padding: 4px 12px;
   font-size: 14px;
+  font-weight: 500;
   color: var(--color-text-body);
   border-radius: var(--rounded-xs);
   transition: 0.3s ease;
 }
 
 .link.active {
-  color: #ffff;
-  background: var(--color-primary);
+  color: var(--color-primary);
 }
 
 @media(hover: hover) {
   .link:hover {
-    color: #ffff;
-    background: var(--color-primary);
+    color: var(--color-primary);
     transition: 0.3s ease;
+  }
+
+  .link.active:hover {
+    color: var(--color-primary);
   }
 }

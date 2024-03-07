@@ -1,0 +1,18 @@
+.link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: var(--rounded-xs);
+}
+
+.github {
+  fill: var(--color-text-body);
+}
+
+@media(hover: hover) {
+  .link:hover {
+    outline: 2px solid var(--color-primary);
+  }
+}
