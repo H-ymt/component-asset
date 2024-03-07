@@ -5,11 +5,11 @@ export default function Moon() {
     <svg
       role="img"
       aria-label="dark mode"
-      width={24}
-      height={24}
+      width={20}
+      height={20}
       viewBox="0 0 24 24"
       fill="none"
-      stroke="#9670f0"
+      stroke="var(--color-text-body)"
       stroke-width={1.5}
       stroke-linecap="round"
       stroke-linejoin="round"
