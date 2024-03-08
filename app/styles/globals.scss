@@ -10,8 +10,8 @@
   --color-primary: #0f83fd;
   --color-primary-hover: #0f82fd36;
   --color-bg-base: #ffff;
-  --color-text-body: #000000d1;
-  --color-text-muted: #3c3c43c7;
+  --color-text-heading: #3c3c43;
+  --color-text-body: #3c3c43c7;
   --color-text-link: #0f83fd;
   --color-button-primary: #0f83fd;
   --color-border: #e2e2e3;
@@ -31,8 +31,8 @@
   --color-primary: #FF4785;
   --color-primary-hover: #ff47842d;
   --color-bg-base: #171C23;
-  --color-text-body: #fffff5db;
-  --color-text-muted: #EBEBF599;
+  --color-text-heading: #fffff5db;
+  --color-text-body: #EBEBF599;
   --color-text-link: #029CFD;
   --color-button-primary: #029CFD;
   --color-border: #2e2e32;
@@ -53,6 +53,11 @@ body {
   overflow-x: hidden;
   color: var(--color-text-body);
   background: var(--color-bg-base)
+}
+
+h1,
+h2 {
+  color: var(--color-text-heading);
 }
 
 h1 {
