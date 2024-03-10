@@ -17,7 +17,7 @@
 }
 
 .link.active {
-  color: var(--color-text-body);
+  color: var(--color-text-heading);
 }
 
 .link.active::after {
@@ -33,7 +33,7 @@
 
 @media(hover: hover) {
   .link:hover {
-    color: var(--color-text-body);
+    color: var(--color-text-menu);
     transition: 0.3s ease;
   }
 }
