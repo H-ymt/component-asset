@@ -1,0 +1,42 @@
+.openButton {
+  width: 100%;
+  max-width: 200px;
+  height: 100%;
+  aspect-ratio: 1/1;
+  background: transparent;
+  border: none;
+  border: 1px solid var(--color-border);
+  border-radius: var(--rounded-xxl);
+  transition: 0.3s ease;
+}
+
+@media(hover: hover) {
+  .openButton:hover {
+    background: #ebeaea53;
+    transition: 0.3s ease;
+  }
+}
+
+.dialog {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 4/3;
+  padding: 20px 24px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--rounded-xl);
+  transform: translate(-50%, -50%);
+}
+
+.dialog[open] {
+  display: inline-flex;
+}
+
+.dialog::backdrop {
+  background-color: rgb(0 0 0 / 20%);
+}

@@ -22,16 +22,6 @@ export default function Menu() {
         </li>
         <li>
           <Link
-            href="/about"
-            className={`${styles.link} ${
-              pathname === "/about" ? styles.active : ""
-            }`}
-          >
-            About
-          </Link>
-        </li>
-        <li>
-          <Link
             href="/stack"
             className={`${styles.link} ${
               pathname === "/stack" ? styles.active : ""
