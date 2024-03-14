@@ -7,7 +7,7 @@ export default function MainLayout({
   return (
     <div className={styels.layout}>
       <Aside />
-      <main>{children}</main>
+      <main className={styels.main}>{children}</main>
     </div>
   )
 }

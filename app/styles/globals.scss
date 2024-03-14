@@ -12,11 +12,13 @@
   --color-bg-base: #ffff;
   --color-text-heading: #3c3c43;
   --color-text-menu: #3c3c43;
-  --color-text-body: #3c3c43c7;
+  --color-text-body: #3c3c43d1;
   --color-text-link: #0f83fd;
   --color-button-primary: #0f83fd;
   --color-border: #e2e2e3;
   --color-loader: 0 0 0;
+  --color-card-foreground: #3c3c43;
+  --color-card-background: #f6f6f7;
 
   // border-radius
   --rounded-xs: 4px;
@@ -35,11 +37,13 @@
   --color-bg-base: #171C23;
   --color-text-heading: #fffff5db;
   --color-text-menu: #fffff5db;
-  --color-text-body: #EBEBF599;
+  --color-text-body: #ebebf5b0;
   --color-text-link: #029CFD;
   --color-button-primary: #029CFD;
   --color-border: #2e2e32;
   --color-loader: 0 0 100;
+  --color-card-foreground: #fffff5db;
+  --color-card-background: #202127;
 }
 
 * {
@@ -75,14 +79,6 @@ h2 {
   font-weight: 700;
   line-height: 40px;
   letter-spacing: -0.01em;
-}
-
-section {
-  padding: 2.5rem 0;
-
-  @include mq(md) {
-    padding: 5rem 0;
-  }
 }
 
 a {

@@ -1,0 +1,22 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.stackCard {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  color: var(--color-card-foreground);
+  background: var(--color-card-background);
+  border: none;
+  border-radius: var(--rounded-md);
+}
+
+@media(hover: hover) {
+  .stackCard:hover {
+    outline: 1px solid var(--color-primary);
+  }
+}
