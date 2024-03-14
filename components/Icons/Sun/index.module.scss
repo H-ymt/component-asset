@@ -1,5 +1,7 @@
-@media(hover: hover) {
-  .sun:hover {
+@use "@variables" as *;
+
+.sun {
+  @include hover {
     stroke-width: 2;
     transition: 0.3s ease;
   }

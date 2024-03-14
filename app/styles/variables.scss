@@ -10,3 +10,11 @@ $breakpoints: (
     @content;
   }
 }
+
+@mixin hover {
+  @media (hover: hover) {
+    &:where(:any-link, :enabled, summary):hover {
+      @content;
+    }
+  }
+}

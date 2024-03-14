@@ -1,3 +1,5 @@
+@use "@variables" as *;
+
 .list {
   display: flex;
 }
@@ -12,19 +14,17 @@
   color: var(--color-text-menu);
   border-radius: var(--rounded-xs);
   transition: 0.3s ease;
+
+  @include hover {
+    color: var(--color-primary);
+    transition: 0.3s ease;
+  }
 }
 
 .link.active {
   color: var(--color-primary);
-}
 
-@media(hover: hover) {
-  .link:hover {
-    color: var(--color-primary);
-    transition: 0.3s ease;
-  }
-
-  .link.active:hover {
+  @include hover {
     color: var(--color-primary);
   }
 }

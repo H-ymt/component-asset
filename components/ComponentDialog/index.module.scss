@@ -1,3 +1,5 @@
+@use "@variables" as *;
+
 .openButton {
   width: 100%;
   max-width: 200px;
@@ -8,10 +10,8 @@
   border: 1px solid var(--color-border);
   border-radius: var(--rounded-xxl);
   transition: 0.3s ease;
-}
 
-@media(hover: hover) {
-  .openButton:hover {
+  @include hover {
     background: #ebeaea53;
     transition: 0.3s ease;
   }

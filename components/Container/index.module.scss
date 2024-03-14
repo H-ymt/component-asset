@@ -8,5 +8,6 @@
   @include mq(md) {
     max-width: var(--container-width);
     padding: 0 6%;
+    margin-inline: inherit;
   }
 }
