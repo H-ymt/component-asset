@@ -1,7 +1,15 @@
+@use "@variables" as *;
+
+.sectionTitle {
+  font-size: 32px;
+  text-align: center;
+}
+
 .container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 18px;
+  padding: 24px 0;
 }
 
 .stackCard {
@@ -9,14 +17,13 @@
   align-items: center;
   justify-content: center;
   padding: 50px;
+  font-size: 30px;
   color: var(--color-card-foreground);
   background: var(--color-card-background);
   border: none;
   border-radius: var(--rounded-md);
-}
 
-@media(hover: hover) {
-  .stackCard:hover {
+  @include hover {
     outline: 1px solid var(--color-primary);
   }
 }
