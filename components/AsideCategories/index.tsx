@@ -13,9 +13,9 @@ export default function AsideCategories() {
       {CATEGORIES.map(categories => (
         <li key={categories.slug}>
           <Link
-            href={`/categories/${categories.slug}`}
+            href={`/showcase/${categories.slug}`}
             className={`${styles.link} ${
-              pathname === `/categories/${categories.slug}` ? styles.active : ""
+              pathname === `/showcase/${categories.slug}` ? styles.active : ""
             }`}
           >
             {categories.categorie}

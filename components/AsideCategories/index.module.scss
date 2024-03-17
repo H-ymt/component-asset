@@ -12,7 +12,7 @@
   width: 100%;
   font-size: 14px;
   font-weight: 500;
-  line-height: 28px;
+  line-height: 30px;
   color: var(--color-text-muted);
   letter-spacing: 0.02em;
   transition: 0.3s ease;
@@ -24,7 +24,7 @@
 }
 
 .link.active {
-  color: var(--color-text-heading);
+  color: var(--color-foreground);
 }
 
 .link.active::after {
