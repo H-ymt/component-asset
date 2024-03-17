@@ -10,6 +10,10 @@
 
   @include hover {
     outline: 2px solid var(--color-primary);
+
+    .github {
+      fill: var(--color-foreground);
+    }
   }
 }
 
