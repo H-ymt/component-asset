@@ -1,0 +1,18 @@
+.container {
+  display: inline-flex;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--color-foreground);
+}
+
+.text {
+  font-weight: 500;
+  color: var(--color-foreground);
+}
