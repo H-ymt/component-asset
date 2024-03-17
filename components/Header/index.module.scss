@@ -4,7 +4,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
   height: var(--header-height);
   border-bottom: 1px solid var(--color-border);
 }
@@ -13,6 +12,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 95%;
+  max-width: 1000px;
+  margin-inline: auto;
 }
 
 .headerLogo {

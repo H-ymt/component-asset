@@ -9,27 +9,25 @@ import styles from "./index.module.scss"
 export default function Header() {
   return (
     <header className={styles.header}>
-      <Container>
-        <div className={styles.headerInner}>
-          <div className={styles.headerMenu}>
-            <Link href="/" className={styles.headerLogo}>
-              <Image
-                src="/logo.png"
-                alt="Logo"
-                width={30}
-                height={30}
-                loading="eager"
-              />
-            </Link>
-            <Menu />
-          </div>
-
-          <div className={styles.headerIcons}>
-            <Github />
-            <ThemeToggle />
-          </div>
+      <div className={styles.headerInner}>
+        <div className={styles.headerMenu}>
+          <Link href="/" className={styles.headerLogo}>
+            <Image
+              src="/logo.png"
+              alt="Logo"
+              width={30}
+              height={30}
+              loading="eager"
+            />
+          </Link>
+          <Menu />
         </div>
-      </Container>
+
+        <div className={styles.headerIcons}>
+          <Github />
+          <ThemeToggle />
+        </div>
+      </div>
     </header>
   )
 }
