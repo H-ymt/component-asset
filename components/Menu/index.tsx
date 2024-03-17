@@ -22,6 +22,16 @@ export default function Menu() {
         </li>
         <li>
           <Link
+            href="/showcase"
+            className={`${styles.link} ${
+              pathname.startsWith("/showcase") ? styles.active : ""
+            }`}
+          >
+            Showcase
+          </Link>
+        </li>
+        <li>
+          <Link
             href="/stack"
             className={`${styles.link} ${
               pathname === "/stack" ? styles.active : ""
