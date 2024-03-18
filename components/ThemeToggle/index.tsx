@@ -1,7 +1,7 @@
 "use client"
 
 import { useTheme } from "next-themes"
-import { Suspense, useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import Moon from "../Icons/Moon"
 import Sun from "../Icons/Sun"
 import styles from "./index.module.scss"
