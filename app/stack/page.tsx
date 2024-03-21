@@ -18,18 +18,6 @@ export default function Page() {
           <a target="_brank" href="https//" className={styles.stackCard}>
             <Vercel />
           </a>
-          <a target="_brank" href="https//" className={styles.stackCard}>
-            <Vercel />
-          </a>
-          <a target="_brank" href="https//" className={styles.stackCard}>
-            <Vercel />
-          </a>
-          <a target="_brank" href="https//" className={styles.stackCard}>
-            <Vercel />
-          </a>
-          <a target="_brank" href="https//" className={styles.stackCard}>
-            <Vercel />
-          </a>
         </div>
       </section>
 
