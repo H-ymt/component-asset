@@ -3,6 +3,7 @@ import Link from "next/link"
 import Container from "../Container"
 import Github from "../Icons/Github"
 import Menu from "../Menu"
+import MenuMobile from "../MenuMobile"
 import ThemeToggle from "../ThemeToggle"
 import styles from "./index.module.scss"
 
@@ -23,9 +24,12 @@ export default function Header() {
           <Menu />
         </div>
 
-        <div className={styles.headerIcons}>
-          <Github />
-          <ThemeToggle />
+        <div className={styles.headerRight}>
+          <MenuMobile />
+          <div className={styles.headerIcons}>
+            <Github />
+            <ThemeToggle />
+          </div>
         </div>
       </div>
     </header>

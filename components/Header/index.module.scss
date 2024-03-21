@@ -34,7 +34,17 @@
 }
 
 .headerIcons {
-  display: flex;
-  gap: 6px;
+  display: none;
+
+  @include mq(lg) {
+    display: flex;
+    gap: 6px;
+    align-items: center;
+  }
+}
+
+.headerRight {
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
 }
