@@ -3,6 +3,7 @@
 import { AlignRight, X } from "lucide-react"
 import Link from "next/link"
 import { useState } from "react"
+import ThemeToggle from "../ThemeToggle"
 import styles from "./index.module.scss"
 
 export default function MenuMobile() {
@@ -25,16 +26,34 @@ export default function MenuMobile() {
         )}
       </button>
       <nav className={`${styles.menu} ${isOpen ? styles.open : ""}`}>
-        <ul>
-          <li>
-            <Link href="/" className={styles.link}>
-              Menu
-            </Link>
-          </li>
-          <li>
-            <Link href="/">Menu</Link>
-          </li>
-        </ul>
+        <div className={styles.menuContainer}>
+          <ul className={styles.list}>
+            <li>
+              <Link href="/" className={styles.link} onClick={handleClick}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="/showcase"
+                className={styles.link}
+                onClick={handleClick}
+              >
+                Showcase
+              </Link>
+            </li>
+            <li>
+              <Link href="/stack" className={styles.link} onClick={handleClick}>
+                Stack
+              </Link>
+            </li>
+          </ul>
+
+          <div className={styles.appearance}>
+            <p>Appearance</p>
+            <ThemeToggle />
+          </div>
+        </div>
       </nav>
     </>
   )
